@@ -163,7 +163,39 @@ ul li {
 #navbar-hero #hero .row .Me .multi-text {
     font-size: 2rem;
     font-weight: 800;
-    color: var(--normal-white);
+    color: transparent;
+    -webkit-text-stroke: 2px var(--normal-white);
+    text-stroke: 2px var(--normal-white);
+    letter-spacing: 0.1em; /* Adjust this value as needed */
+    padding-right: 0.1em; /* Matches letter-spacing */
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Cursor styling */
+#navbar-hero #hero .row .Me .multi-text::after {
+    content: '';
+    position: absolute;
+    right: -0.1em;
+    top: 0;
+    height: 1.2em;
+    width: 0.1em;
+    background: var(--normal-white);
+    animation: blink 0.7s step-end infinite;
+}
+
+.dark #navbar-hero #hero .row .Me .multi-text {
+    -webkit-text-stroke: 2px var(--text-dark);
+    text-stroke: 2px var(--text-dark);
+}
+
+.dark #navbar-hero #hero .row .Me .multi-text::after {
+    background: var(--text-dark);
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 #navbar-hero #hero .row .Me .buttons {
