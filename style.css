@@ -27,7 +27,11 @@ body {
 .section-p1 {
     padding: 40px 80px;
 }
-  
+
+#abilities i.bx {
+    color: var(--img-bg-color); /* Replace with your desired color */
+    font-size: 2rem; /* Optional: control icon size */
+}
 .section-m1 {
     margin: 40px 0;
 }
@@ -309,14 +313,33 @@ ul li {
     margin-bottom: 1rem;
 }
 
-.more {
-    display: inline-block;
+.more h6 {
+    display: inline-flex;
+    align-items: center;
     padding: 10px 20px;
     margin-top: 30px;
     color: #007b5e;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.more h6:hover {
+    transform: scale(1.1); /* Slightly enlarges the text and icon */
+    color: #00563f; /* Changes the text color on hover */
+}
+
+.more h6 i {
+    font-size: 1rem;
+    vertical-align: middle;
+    color: #007b5e;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.more h6:hover i {
+    transform: translateX(5px); /* Moves the arrow slightly to the right */
+    color: #007b5e; /* Changes the arrow color on hover */
 }
 
 
@@ -850,5 +873,4 @@ footer p {
         bottom: 20px;
         right: 20px;
       }
-    
 }
