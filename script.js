@@ -83,3 +83,57 @@ scrollTopBtn.addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+
+const multiText = document.querySelector('#navbar-hero #hero .row .Me .multi-text');
+const outlinedWords = ["Developer", "Арplication", "Design", "Creative", "Portfolio"];
+const letterSpacing = 0.1; // Should match your CSS letter-spacing in em
+
+function typeOutlinedText() {
+    if (!multiText) return;
+    
+    let wordIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+    let typingSpeed = 150;
+    
+    function type() {
+        const fullWord = outlinedWords[wordIndex];
+        
+        if (isDeleting) {
+            currentText = fullWord.substring(0, currentText.length - 1);
+            typingSpeed = 50;
+        } else {
+            currentText = fullWord.substring(0, currentText.length + 1);
+            typingSpeed = 150;
+        }
+        
+        // Apply letter spacing to each character
+        multiText.innerHTML = currentText.split('').map(char => 
+            `<span style="display: inline-block; margin-right: ${letterSpacing}em">${char}</span>`
+        ).join('');
+        
+        // Animation logic
+        if (!isDeleting && currentText === fullWord) {
+            typingSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && currentText === '') {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % outlinedWords.length;
+            typingSpeed = 500;
+        }
+        
+        setTimeout(type, typingSpeed);
+    }
+    
+    type();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    typeOutlinedText();
+    
+    // Theme adaptation
+    const isDark = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDark && multiText) {
+        multiText.style.setProperty('--text-stroke-color', 'var(--text-dark)');
+    }
+});
