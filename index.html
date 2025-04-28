@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--bootstrap css cdn link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--boxicon link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section id="navbar-hero"> 
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" style="margin-right: 10rem;" href="#">UI Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blog Page 1</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Page 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Page 1</a></li>
+                  <li><a class="dropdown-item" href="#">Page 2</a></li>
+                  <li><a class="dropdown-item" href="#">Page 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a href="#" class="btn-green">Hire Me</a>
+            <div class="icons">
+                <i class='bx bx-search'></i>
+                <button id="theme-toggle">
+                  <i id="theme-icon" class='bx bx-moon'></i>
+                </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+        <div id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="Me col-lg-6 col-md-12 col-sm-12">
+                        <h1 style="color: #fff;">Hi, I'm John Watson</h1>
+                        <p class="multi-text"></p>
+                        <p style="color: #fff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div class="buttons">
+                          <a href="#" class="btn-green">Hire Me</a>
+                          <a href="#" class="btn-port">My Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img src="assets/img/banner.png" alt="Hero Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>  
+          </div>
+    </section>
+
+    <section id="bio" class="section-p1">
+        <div class="container">
+            <div class="row">
+                <div class="about col-lg-6 col-md-12 col-sm-12">
+                    <img src="assets/img/about.jpg" alt="me" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h6>MY BIOGRAPHY</h6>
+                    <h2>A Lead UI Designer & Web Developer Based in UK</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat nec ligula facilisis bibendum. Sed ac felis non nisi facilisis convallis.</p>
+                    <hr>
+                    <div class="details">
+                        <div class="col">
+                            <p><strong>Name:</strong> John Watson</p>
+                            <p><strong>Email:</strong> example@mail.com</p>
+                        </div>
+                        <div class="col">
+                            <p><strong>From:</strong> London, UK</p>
+                            <p><strong>Phone:</strong> +21 234 567 8901</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <h4>Follow me on</h4>
+                        <ul class="media-links">
+                            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                            <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn-green-dark">Hire Me</a>
+                        <a href="#" class="btn-green">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="abilities" class="setion-p1">
+      <div class="container-fluid able">
+        <h4 class="title">What I Do For You</h4>
+        <div class="container skills">
+          <div class="card">
+            <span><i class='bx bx-code-alt'></i></span>
+            <h4>Web Development</h4>
+            <p>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quo magnam excepturi eligendi dicta necessitatibus explicabo ipsa corporis debitis eos placeat non libero rem expedita quam facere eius, nobis quasi!
+            </p>
+          </div>
+          <div class="card">
+            <span><i class='bx bx-paint'></i></span>
+            <h4>UI/UX Design</h4>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis hic dolor, corporis libero cumque omnis, tempore culpa odio dolores placeat molestiae repellendus. Molestiae repellat laboriosam temporibus rem! Odit, omnis. Harum.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class='bx bx-paint'></i></span>
+            <h4>UI/UX Design</h4>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolores recusandae magnam harum neque ipsam esse deserunt fuga doloribus cum itaque totam illum reiciendis provident, commodi atque. Nihil, et sunt!
+            </p>
+          </div>
+        </div>
+        <a href="#" class="more"><h6>More Servvices</h6></a>
+      </div>
+    </section>
+
+    <section id="skills-section">
+      <div class="skills-container">
+        <div class="skills-image">
+          <img src="https://img.freepik.com/free-photo/modern-comfortable-workplace-home-there-are-computer-laptop-table_613910-13268.jpg?t=st=1745706237~exp=1745709837~hmac=543d2b539e888794d6d077b9c5efeeeddf70c1b153493c0ade9df890477403c6&w=900" alt="Featured Skills">
+        </div>
+        <div class="skills-content">
+          <h5>MY SKILLS</h5>
+          <h2>My Featured Skills</h2>
+          <p>I specialize in Branding and Strategy, and am passionate about creating Awesome Portfolio work. And I always ready to impress the audience with my Creativity.</p>
+          
+          <div class="skill">
+            <p>UI/UX Design</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%;"></div>
+            </div>
+          </div>
+    
+          <div class="skill">
+            <p>Ideas & Technology</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+    
+          <div class="skill">
+            <p>Branding Design</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+    
+          <div class="skill">
+            <p>Responsive Web Design</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section id="more-skills" class="services-section section-p1">
+      <div class="container services-content">
+        <div class="more-skills">
+          <div class="service-item">
+            <div class="col">
+              <div class="content">
+                <i class='bx bxl-wordpress'></i>
+                <div class="content-details">
+                  <h4>Web Development</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+              <div class="content">
+                <i class='bx bx-line-chart'></i>
+                <div class="content-details">
+                  <h4>Research & Analysis</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+              <div class="content">
+                <i class='bx bx-mobile'></i>
+                <div class="content-details">
+                  <h4>Responsive design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <i class='bx bxl-css3'></i>
+                <div class="content-details">
+                  <h4>Design Trends</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+              <div class="content">
+                <i class='bx bx-support'></i>
+                <div class="content-details">
+                  <h4>Customer support</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+              <div class="content">
+                <i class='bx bxs-paint'></i>
+                <div class="content-details">
+                  <h4>PSD Design</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-img">
+            <img src="assets/img/banner.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="counter-section" class="section-p1">
+      <div class="container counter-section">
+        <div>
+          <div class="counter" data-target="135">0</div>
+          <div class="label">Finished Projects</div>
+        </div>
+        <div>
+          <div class="counter" data-target="225">0</div>
+          <div class="label">Working Hours</div>
+        </div>
+        <div>
+          <div class="counter" data-target="115">0</div>
+          <div class="label">Meetings Held</div>
+        </div>
+        <div>
+          <div class="counter" data-target="272">0</div>
+          <div class="label">Happy Customers</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section-p1">
+      <div class="container-fluid portfolio">
+        <div class="title">
+          <h2>My Success Work</h2>
+        </div>
+        
+        <div class="container images-grid">
+          <!-- 1 -->
+          <div class="image-container">
+            <img src="./assets/img/blog1.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Architecture</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+  
+          <!-- 2 -->
+          <div class="image-container">
+            <img src="./assets/img/blog2.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Corporate</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+  
+          <!-- 3 -->
+          <div class="image-container">
+            <img src="./assets/img/blog3.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Ecommerce</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+  
+          <!-- 4 -->
+          <div class="image-container">
+            <img src="./assets/img/blog4.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Mobile UI</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+  
+          <!-- 5 -->
+          <div class="image-container">
+            <img src="./assets/img/blog5.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Fashion</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+  
+          <!-- 6 -->
+          <div class="image-container">
+            <img src="./assets/img/blog6.jpg" alt="portfolio image" class="image">
+            
+            <div class="content-details">
+              <h3 class="content-title">Real Estate</h3>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="logo-section" class="section-p1">
+      <div class="container logo-section">
+        <div class="logo-track">
+          <img src="" alt="Logo 1">
+          <img src="" alt="Logo 2">
+          <img src="" alt="Logo 3">
+          <img src="" alt="Logo 4">
+          <img src="" alt="Logo 1">
+          <img src="" alt="Logo 2">
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-section" class="container-fluid section-p1">
+      <div class="container">
+        <h3>UI Portfolio</h3>
+        <p><i class='bx bxs-phone'></i>+12 345 678 900  <i class='bx bxs-envelope'></i>info@example.com   <i class='bx bxs-map'></i>208 Avenue street, UK-62617</p>
+      </div>
+    </footer>
+
+    <section id="footer-bottom">
+      <div class="footer-bottom">
+        <div class="footer-content">
+          <p>&copy; 2025 UI Portfolio. All rights reserved.</p>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <i class='bx bx-up-arrow-alt'></i>
+    </button>
+    
+    <script src="script.js"></script>
+  
+    <!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    // Initialize Typed.js
+    const typed = new Typed('.multi-text', {
+    strings: ['Web Developer', 'App Developer', 'Photographer'],
+    typedSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+    showCursor: false
+    });
+    </script>
+
+    <!--bootstrap js cdn link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
